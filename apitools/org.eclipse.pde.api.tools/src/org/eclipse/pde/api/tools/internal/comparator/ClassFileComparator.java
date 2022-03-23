@@ -1280,8 +1280,6 @@ public class ClassFileComparator {
 		} catch (CoreException e) {
 			reportStatus(e);
 			return null;
-		} finally {
-			localmonitor.done();
 		}
 	}
 

@@ -144,7 +144,7 @@ public class UseScanManager {
 			}
 			if (unavailableMembers.size() > 0) {
 				fetch(apiComponent, unavailableMembers.toArray(new String[unavailableMembers.size()]), references,
-						monitor);
+						localmonitor.split(8));
 			}
 			localmonitor.split(1);
 			return references.getExternalDependenciesTo(apiUseTypes);
